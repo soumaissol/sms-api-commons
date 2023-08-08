@@ -8,10 +8,7 @@ function convertAndValidateInput<TData>(data: any, input: TData | null): TData {
   }
   const { error }: { error: any } = jf.validate(input);
   if (error?.message) {
-    if (error instanceof InvalidInput) {
-      throw error;
-    }
-    throw new InvalidInput(error.message, 'validation_error');
+    throw new InvalidInput(error.message, error.code || 'validation_error');
   }
 
   return input;
