@@ -1,13 +1,12 @@
 import type { APIGatewayProxyResult } from 'aws-lambda';
 import HttpStatus from 'http-status-codes';
 
-import { GenericError, InvalidInput } from '../errors';
 import type { Locale } from '../locale';
 import { Logger } from '../logger';
 
 const defaultHeaders = (): any => {
   return {
-    'Access-Control-Allow-Headers': 'Content-Type,Accept',
+    'Access-Control-Allow-Headers': '*',
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': '*',
   };
