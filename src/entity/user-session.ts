@@ -1,3 +1,3 @@
-export default class UserSession {
+export class UserSession {
   constructor(readonly authToken: string) {}
 }
