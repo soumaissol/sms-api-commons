@@ -1,6 +1,6 @@
 import type { APIGatewayProxyEvent } from 'aws-lambda';
 
-import UserSession from '../entity/user-session';
+import { UserSession } from '../entity';
 
 const getUserSessionFromEvent = (event: APIGatewayProxyEvent): UserSession | null => {
   // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
