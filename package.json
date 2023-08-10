@@ -1,7 +1,7 @@
 {
   "name": "sms-api-commons",
   "description": "SouMaisSol api commons lib",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": {
@@ -22,6 +22,7 @@
   "dependencies": {
     "http-status-codes": "^2.1.4",
     "joiful": "^3.0.2",
+    "jsonwebtoken": "^9.0.1",
     "winston": "^3.10.0"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "@types/aws-lambda": "^8.10.119",
     "@types/axios": "^0.14.0",
     "@types/jest": "^27.0.2",
+    "@types/jsonwebtoken": "^9.0.2",
     "@types/node": "^16.11.6",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
